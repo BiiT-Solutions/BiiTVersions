@@ -5,7 +5,7 @@
     <name>BiiT Versions</name>
     <groupId>com.biit</groupId>
     <artifactId>versions</artifactId>
-    <version>0.0.4-SNAPSHOT</version>
+    <version>0.1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>BiiT Parent Project with all dependencies versions</description>
 
@@ -122,11 +122,6 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>com.biit</groupId>
-            <artifactId>common-utils</artifactId>
-            <version>${biit-common-utils.version}</version>
-        </dependency>
         <!-- Testing -->
         <dependency>
             <groupId>org.testng</groupId>
@@ -135,6 +130,106 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>cipher</artifactId>
+                <version>${cipher.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>common-utils</artifactId>
+                <version>${biit-common-utils.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>vaadin-common</artifactId>
+                <version>${biit-vaadin-common.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>database-encryptor</artifactId>
+                <version>${database-encryptor.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>liferay-authentication-client</artifactId>
+                <version>${liferay-authentication-client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>liferay-knowledge-base</artifactId>
+                <version>${liferay-knowledge-base.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>jpa-schema-exporter</artifactId>
+                <version>${jpa-schema-exporter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>flowable-liferay-users</artifactId>
+                <version>${flowable-liferay-users.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>rest-services-security</artifactId>
+                <version>${rest-services-security.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>orbeon.form.reader</artifactId>
+                <version>${orbeon.form.reader.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>omnia-proxy-client</artifactId>
+                <version>${omnia-proxy-client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>form-runner</artifactId>
+                <version>${form-runner.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>infographic-engine</artifactId>
+                <version>${infographic-engine.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>rest-generic-client</artifactId>
+                <version>${rest-generic-client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>bean-hot-deployer</artifactId>
+                <version>${bean-hot-deployer.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>orbissport-patient-infographic-engine</artifactId>
+                <version>${orbissport-patient-infographic-engine.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>orbissport-company-infographic-engine</artifactId>
+                <version>${orbissport-company-infographic-engine.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>form-result-pdf</artifactId>
+                <version>${form-result-pdf.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>messagebird-client</artifactId>
+                <version>${messagebird-client.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <plugins>
