@@ -120,16 +120,6 @@
         <cipher.version>[0, 1)</cipher.version>
     </properties>
 
-    <dependencies>
-        <!-- Testing -->
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>${org.testng.version}</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
-
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -226,6 +216,13 @@
                 <groupId>com.biit</groupId>
                 <artifactId>messagebird-client</artifactId>
                 <version>${messagebird-client.version}</version>
+            </dependency>
+            <!-- Testing -->
+            <dependency>
+                <groupId>org.testng</groupId>
+                <artifactId>testng</artifactId>
+                <version>${org.testng.version}</version>
+                <scope>test</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
