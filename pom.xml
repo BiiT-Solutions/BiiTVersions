@@ -1,0 +1,131 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <name>BiiT Versions</name>
+    <groupId>com.biit</groupId>
+    <artifactId>versions</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <description>BiiT Parent Project with all dependencies versions</description>
+
+    <developers>
+        <developer>
+            <id>jhortelano</id>
+            <name>Jorge Hortelano</name>
+            <email>jhortelano@biit-solutions.com</email>
+            <roles>
+                <role>Project-Administrator</role>
+                <role>Developer</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>BiiT Software License</name>
+        </license>
+    </licenses>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.5.5</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <distributionManagement>
+        <repository>
+            <id>central</id>
+            <name>libs-releases</name>
+            <url>https://artifactory.biit-solutions.com/artifactory/libs-release</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>libs-snapshot</name>
+            <url>https://artifactory.biit-solutions.com/artifactory/libs-snapshot</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <properties>
+        <!-- Properties -->
+        <root.directory>${project.basedir}</root.directory>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.encoding>UTF-8</project.encoding>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.jdk.version>1.8</java.jdk.version>
+        <!-- Maven plugins -->
+        <maven-resources-plugin.version>2.7</maven-resources-plugin.version>
+        <maven-compiler-plugin.version>3.2</maven-compiler-plugin.version>
+        <maven-antrun-plugin.version>1.8</maven-antrun-plugin.version>
+        <maven-surefire.version>2.19.1</maven-surefire.version>
+        <exec-maven-plugin.version>1.6.0</exec-maven-plugin.version>
+        <maven-failsafe-plugin.version>2.22.1</maven-failsafe-plugin.version>
+        <maven-javadoc.version>2.10.4</maven-javadoc.version>
+        <maven-release-plugin.version>2.5.1</maven-release-plugin.version>
+        <maven-scm-provider-gitexe.version>1.9.2</maven-scm-provider-gitexe.version>
+        <project.scm.id>git</project.scm.id>
+        <graph-maven-plugin.version>1.2.3</graph-maven-plugin.version>
+        <maven-site-plugin.version>3.4</maven-site-plugin.version>
+        <findbugs-maven-plugin.version>3.0.5</findbugs-maven-plugin.version>
+        <sql-maven-plugin.version>1.5</sql-maven-plugin.version>
+        <jetty-maven-plugin.version>9.4.43.v20210629</jetty-maven-plugin.version>
+        <maven-war-plugin.version>2.6</maven-war-plugin.version>
+        <maven-clean-plugin.version>2.4.1</maven-clean-plugin.version>
+        <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
+        <!-- External dependencies not included on Spring Parent -->
+        <org.testng.version>6.14.3</org.testng.version>
+        <junit.version>4.12</junit.version>
+        <vaadin.version>7.7.27</vaadin.version>
+        <vaadin.plugin.version>${vaadin.version}</vaadin.plugin.version>
+        <vaadin.spring.version>1.0.0</vaadin.spring.version>
+        <vaadin-testbench.version>4.0.3</vaadin-testbench.version>
+        <vaadin.charts.version>3.0.0</vaadin.charts.version>
+        <vaadin-stepper.version>2.3.0</vaadin-stepper.version>
+        <flowable.version>6.3.0</flowable.version>
+        <zip4j.version>1.3.2</zip4j.version>
+        <batik.version>1.7</batik.version>
+        <javax.interceptor.version>3.1</javax.interceptor.version>
+        <cors-filter.version>2.4</cors-filter.version>
+        <jsonwebtoken.version>0.7.0</jsonwebtoken.version>
+        <!-- BiiT Dependencies -->
+        <biit-common-utils.version>[1.1,1.2)</biit-common-utils.version>
+        <rest-generic-client.version>[1.0,1.1)</rest-generic-client.version>
+        <event-structure.version>[1.0,1.1)</event-structure.version>
+        <cipher.version>[0, 1)</cipher.version>
+        <liferay-authentication-client.version>[1.0,1.1)</liferay-authentication-client.version>
+        <liferay-knowledge-base.version>[1.0,1.1)</liferay-knowledge-base.version>
+        <biit-vaadin-common.version>[1.0,1.1)</biit-vaadin-common.version>
+        <webforms-persistence.version>[2,3)</webforms-persistence.version>
+        <jpa-schema-exporter.version>[0.5,0.6)</jpa-schema-exporter.version>
+        <flowable-liferay-users.version>[0.6,0.7)</flowable-liferay-users.version>
+        <rest-services-security.version>[1.0,1.1)</rest-services-security.version>
+        <orbeon.form.reader.version>[1.0, 1.1)</orbeon.form.reader.version>
+        <omnia-proxy-client.version>[1.0, 1.1)</omnia-proxy-client.version>
+        <form-runner.version>[1.4, 1.5)</form-runner.version>
+        <infographic-engine.version>[1.0,1.1)</infographic-engine.version>
+        <rest-generic-client.version>[1.0,1.1)</rest-generic-client.version>
+        <bean-hot-deployer.version>[1.1,1.2)</bean-hot-deployer.version>
+        <orbissport-patient-infographic-engine.version>[0.3,0.4)</orbissport-patient-infographic-engine.version>
+        <orbissport-company-infographic-engine.version>[0.3,0.4)</orbissport-company-infographic-engine.version>
+        <form-result-pdf.version>[1.0,1.1)</form-result-pdf.version>
+        <database-encryptor.version>[0.2,0.3)</database-encryptor.version>
+        <messagebird-client.version>[1.0,1.1)</messagebird-client.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.biit</groupId>
+            <artifactId>common-utils</artifactId>
+            <version>${biit-common-utils.version}</version>
+        </dependency>
+        <!-- Testing -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${org.testng.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>
