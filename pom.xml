@@ -123,6 +123,7 @@
         <messagebird-client.version>[1.0,1.1)</messagebird-client.version>
         <cipher.version>[0, 1)</cipher.version>
         <des-encryption.version>[1.0,1.1)</des-encryption.version>
+        <storableobject-persistence-manager.version>[1.0,1.1)</storableobject-persistence-manager.version>
     </properties>
 
     <dependencyManagement>
