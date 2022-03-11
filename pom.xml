@@ -94,13 +94,17 @@
         <javax.interceptor.version>3.1</javax.interceptor.version>
         <cors-filter.version>2.4</cors-filter.version>
         <jsonwebtoken.version>0.7.0</jsonwebtoken.version>
+        <commons-logging.version>1.2</commons-logging.version>
         <!-- BiiT Dependencies -->
         <biit-common-utils.version>[1.1,1.2)</biit-common-utils.version>
         <rest-generic-client.version>[1.0,1.1)</rest-generic-client.version>
         <event-structure.version>[1.0,1.1)</event-structure.version>
         <cipher.version>[0, 1)</cipher.version>
+        <user-manager.version>[0.1,0.2)</user-manager.version>
         <liferay-authentication-client.version>[1.0,1.1)</liferay-authentication-client.version>
         <liferay-knowledge-base.version>[1.0,1.1)</liferay-knowledge-base.version>
+        <liferay-configuration-reader.version>[1.0,2.0)</liferay-configuration-reader.version>
+        <liferay-service-common.version>[0.8,0.9)</liferay-service-common.version>
         <biit-vaadin-common.version>[1.0,1.1)</biit-vaadin-common.version>
         <webforms-persistence.version>[2,3)</webforms-persistence.version>
         <jpa-schema-exporter.version>[0.5,0.6)</jpa-schema-exporter.version>
@@ -118,6 +122,7 @@
         <database-encryptor.version>[0.2,0.3)</database-encryptor.version>
         <messagebird-client.version>[1.0,1.1)</messagebird-client.version>
         <cipher.version>[0, 1)</cipher.version>
+        <des-encryption.version>[1.0,1.1)</des-encryption.version>
     </properties>
 
     <dependencyManagement>
@@ -144,6 +149,16 @@
             </dependency>
             <dependency>
                 <groupId>com.biit</groupId>
+                <artifactId>user-manager</artifactId>
+                <version>${user-manager.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit.liferay</groupId>
+                <artifactId>liferay-service-common</artifactId>
+                <version>${liferay-service-common.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
                 <artifactId>liferay-authentication-client</artifactId>
                 <version>${liferay-authentication-client.version}</version>
             </dependency>
@@ -151,6 +166,11 @@
                 <groupId>com.biit</groupId>
                 <artifactId>liferay-knowledge-base</artifactId>
                 <version>${liferay-knowledge-base.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit.liferay</groupId>
+                <artifactId>liferay-configuration-reader</artifactId>
+                <version>${liferay-configuration-reader.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.biit</groupId>
@@ -216,6 +236,11 @@
                 <groupId>com.biit</groupId>
                 <artifactId>messagebird-client</artifactId>
                 <version>${messagebird-client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-logging</groupId>
+                <artifactId>commons-logging</artifactId>
+                <version>${commons-logging.version}</version>
             </dependency>
             <!-- Testing -->
             <dependency>
