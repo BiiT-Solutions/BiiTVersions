@@ -114,13 +114,14 @@
         <dom4j.version>1.6.1</dom4j.version>
         <!-- Version 6.2 of drools is not accepting special characters like 'ë', do not update -->
         <drools.version>6.5.0.Final</drools.version>
+        <javax.servlet.version>2.5</javax.servlet.version>
 
         <!-- BiiT Dependencies -->
         <biit-common-utils.version>[1.1,1.2)</biit-common-utils.version>
         <rest-generic-client.version>[1.0,1.1)</rest-generic-client.version>
         <event-structure.version>[1.0,1.1)</event-structure.version>
         <cipher.version>[0, 1)</cipher.version>
-        <user-manager.version>[0.1,0.2)</user-manager.version>
+        <user-manager.version>[0.2,0.3)</user-manager.version>
         <liferay-authentication-client.version>[1.0,1.1)</liferay-authentication-client.version>
         <liferay-knowledge-base.version>[1.0,1.1)</liferay-knowledge-base.version>
         <liferay-configuration-reader.version>[1.0,2.0)</liferay-configuration-reader.version>
@@ -140,7 +141,6 @@
         <form-structure-orbeon.version>[1.0,1.1)</form-structure-orbeon.version>
         <orbeon-form-reader.version>[1.0,1.1)</orbeon-form-reader.version>
         <infographic-engine.version>[1.0,1.1)</infographic-engine.version>
-        <rest-services-security.version>[1.0,1.1)</rest-services-security.version>
         <bean-hot-deployer.version>[1.1,1.2)</bean-hot-deployer.version>
         <orbissport-patient-infographic-engine.version>[0.3,0.4)</orbissport-patient-infographic-engine.version>
         <orbissport-company-infographic-engine.version>[0.3,0.4)</orbissport-company-infographic-engine.version>
@@ -150,7 +150,6 @@
         <cipher.version>[0, 1)</cipher.version>
         <des-encryption.version>[1.0,1.1)</des-encryption.version>
         <storableobject-persistence-manager.version>[1.0,1.1)</storableobject-persistence-manager.version>
-        <jpa-schema-exporter.version>[0.5,0.6)</jpa-schema-exporter.version>
         <drools-engine.version>[1.0,1.1)</drools-engine.version>
         <plugin-manager.version>[1.0,1.2)</plugin-manager.version>
     </properties>
@@ -217,11 +216,6 @@
                 <groupId>com.biit</groupId>
                 <artifactId>flowable-liferay-users</artifactId>
                 <version>${flowable-liferay-users.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.biit</groupId>
-                <artifactId>rest-services-security</artifactId>
-                <version>${rest-services-security.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.biit</groupId>
@@ -327,11 +321,6 @@
                 <groupId>com.biit</groupId>
                 <artifactId>plugin-manager</artifactId>
                 <version>${plugin-manager.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.biit</groupId>
-                <artifactId>jpa-schema-exporter</artifactId>
-                <version>${jpa-schema-exporter.version}</version>
             </dependency>
 
             <!-- External Dependencies -->
