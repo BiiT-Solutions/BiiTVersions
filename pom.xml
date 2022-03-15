@@ -163,7 +163,6 @@
         <plugin-manager.version>[1.0,1.2)</plugin-manager.version>
         <abcd.version>[1.0,2.0)</abcd.version>
         <webforms.version>[2.13,2.14)</webforms.version>
-        <infographic-engine.version>[1.0,1.1)</infographic-engine.version>
         <form-runner-addon.version />
     </properties>
 
@@ -379,11 +378,6 @@
                 <groupId>com.biit</groupId>
                 <artifactId>webforms-core</artifactId>
                 <version>${webforms.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.biit</groupId>
-                <artifactId>infographic-engine</artifactId>
-                <version>${infographic-engine.version}</version>
             </dependency>
 
 
