@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <name>BiiT Versions</name>
@@ -30,7 +31,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.6.4</version>
-        <relativePath /> <!-- lookup parent from repository -->
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <distributionManagement>
@@ -55,6 +56,7 @@
     <properties>
         <!-- Properties -->
         <root.directory>${project.basedir}</root.directory>
+        <main.basedir>${project.basedir}</main.basedir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.encoding>UTF-8</project.encoding>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -83,6 +85,7 @@
         <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
         <maven-jar-plugin.version>2.4</maven-jar-plugin.version>
         <graph-maven-plugin.version>1.2.3</graph-maven-plugin.version>
+        <maven-checkstyle.version>2.17</maven-checkstyle.version>
 
         <!-- External dependencies not included on Spring Parent -->
         <org.testng.version>6.14.3</org.testng.version>
@@ -126,6 +129,8 @@
         <reflections.version>0.10.2</reflections.version>
         <jersey-hk2.version>2.35</jersey-hk2.version>
         <mysql-connector.version>5.1.49</mysql-connector.version>
+        <springfox-swagger.version>2.9.2</springfox-swagger.version>
+        <hibernate-jcache.version>5.4.2.Final</hibernate-jcache.version>
 
         <!-- BiiT Dependencies -->
         <biit-common-utils.version>[1.1,1.2)</biit-common-utils.version>
@@ -163,9 +168,11 @@
         <storableobject-persistence-manager.version>[1.0,1.1)</storableobject-persistence-manager.version>
         <drools-engine.version>[1.0,1.1)</drools-engine.version>
         <plugin-manager.version>[1.0,1.2)</plugin-manager.version>
-        <abcd.version>[1.0,2.0)</abcd.version>
+        <abcd.version>[1.10,1.11)</abcd.version>
         <webforms.version>[2.13,2.14)</webforms.version>
-        <form-runner-addon.version />
+        <event-structure.version>[1.0,1.1)</event-structure.version>
+        <kafka-client.version>[1.1,1.2)</kafka-client.version>
+        <fact-manager.version>[0.0,0.1)</fact-manager.version>
     </properties>
 
     <dependencyManagement>
@@ -358,6 +365,16 @@
             </dependency>
             <dependency>
                 <groupId>com.biit</groupId>
+                <artifactId>kafka-client</artifactId>
+                <version>${kafka-client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>event-structure</artifactId>
+                <version>${event-structure.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
                 <artifactId>abcd-core</artifactId>
                 <version>${abcd.version}</version>
             </dependency>
@@ -380,6 +397,21 @@
                 <groupId>com.biit</groupId>
                 <artifactId>webforms-core</artifactId>
                 <version>${webforms.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>fact-manager-persistence</artifactId>
+                <version>${fact-manager.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>fact-manager-core</artifactId>
+                <version>${fact-manager.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>fact-manager-kafka</artifactId>
+                <version>${fact-manager.version}</version>
             </dependency>
 
 
@@ -468,6 +500,21 @@
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql-connector.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${springfox-swagger.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${springfox-swagger.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-jcache</artifactId>
+                <version>${hibernate-jcache.version}</version>
             </dependency>
             <!-- Testing -->
             <dependency>
