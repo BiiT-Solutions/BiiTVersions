@@ -132,6 +132,8 @@
         <hibernate-jcache.version>5.4.2.Final</hibernate-jcache.version>
         <jjwt.version>0.9.1</jjwt.version>
         <modelmapper.version>2.3.9</modelmapper.version>
+        <apache-httpclient.version>4.5.3</apache-httpclient.version>
+        <httpmime.version>${apache-httpclient.version}</httpmime.version>
 
         <!-- BiiT Dependencies -->
         <biit-common-utils.version>[1.1,1.2)</biit-common-utils.version>
@@ -526,6 +528,11 @@
                 <groupId>org.modelmapper</groupId>
                 <artifactId>modelmapper</artifactId>
                 <version>${modelmapper.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpmime</artifactId>
+                <version>${httpmime.version}</version>
             </dependency>
             <!-- Testing -->
             <dependency>
