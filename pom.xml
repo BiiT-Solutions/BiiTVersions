@@ -135,6 +135,7 @@
         <apache-httpclient.version>4.5.3</apache-httpclient.version>
         <httpmime.version>${apache-httpclient.version}</httpmime.version>
         <springdoc-openapi.version>1.6.6</springdoc-openapi.version>
+        <mockito.version>1.10.19</mockito.version>
 
         <!-- BiiT Dependencies -->
         <biit-common-utils.version>[1.1,1.2)</biit-common-utils.version>
@@ -174,6 +175,7 @@
         <plugin-manager.version>[1.0,1.2)</plugin-manager.version>
         <abcd.version>[1.10,1.11)</abcd.version>
         <webforms.version>[2.13,2.14)</webforms.version>
+        <usmo.version>[2.8, 2.9)</usmo.version>
         <event-structure.version>[1.0,1.1)</event-structure.version>
         <kafka-client.version>[1.1,1.2)</kafka-client.version>
         <fact-manager.version>[0.1,0.2)</fact-manager.version>
@@ -299,6 +301,11 @@
             </dependency>
             <dependency>
                 <groupId>com.biit</groupId>
+                <artifactId>bean-hot-deployer-annotations</artifactId>
+                <version>${bean-hot-deployer.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
                 <artifactId>orbissport-patient-infographic-engine</artifactId>
                 <version>${orbissport-patient-infographic-engine.version}</version>
             </dependency>
@@ -401,6 +408,16 @@
                 <groupId>com.biit</groupId>
                 <artifactId>webforms-core</artifactId>
                 <version>${webforms.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>usmo-persistence</artifactId>
+                <version>${usmo.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>usmo-core</artifactId>
+                <version>${usmo.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.biit</groupId>
