@@ -114,7 +114,8 @@
         <net.ehcache.version>2.10.9.2</net.ehcache.version>
         <commons-io.version>2.11.0</commons-io.version>
         <apache-poi.version>3.10.1</apache-poi.version>
-        <pf4j.version>2.4.0</pf4j.version>
+        <pf4j.version>3.6.0</pf4j.version>
+        <pf4j-spring.version>0.7.0</pf4j-spring.version>
         <!-- Version 6.2 of drools is not accepting special characters like 'ë', do not update -->
         <drools.version>6.5.0.Final</drools.version>
         <javax.servlet.version>2.5</javax.servlet.version>
@@ -505,6 +506,11 @@
                 <groupId>org.pf4j</groupId>
                 <artifactId>pf4j</artifactId>
                 <version>${pf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.pf4j</groupId>
+                <artifactId>pf4j-spring</artifactId>
+                <version>${pf4j-spring.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dom4j</groupId>
