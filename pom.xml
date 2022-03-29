@@ -83,7 +83,6 @@
         <maven-clean-plugin.version>2.4.1</maven-clean-plugin.version>
         <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
         <maven-jar-plugin.version>2.4</maven-jar-plugin.version>
-        <graph-maven-plugin.version>1.2.3</graph-maven-plugin.version>
         <maven-checkstyle.version>2.17</maven-checkstyle.version>
 
         <!-- External dependencies not included on Spring Parent -->
@@ -108,7 +107,6 @@
         <mybatis.version>3.2.8</mybatis.version>
         <batik.version>1.8</batik.version>
         <xmlgraphics-commons.version>2.1</xmlgraphics-commons.version>
-        <graph-maven-plugin.version>1.2.3</graph-maven-plugin.version>
         <c3p0.version>0.9.5.5</c3p0.version>
         <ehcache.version>3.10.0</ehcache.version>
         <net.ehcache.version>2.10.9.2</net.ehcache.version>
@@ -172,7 +170,7 @@
         <des-encryption.version>[1.0,1.1)</des-encryption.version>
         <storableobject-persistence-manager.version>[1.0,1.1)</storableobject-persistence-manager.version>
         <drools-engine.version>[1.0,1.1)</drools-engine.version>
-        <plugin-manager.version>[1.0,1.2)</plugin-manager.version>
+        <plugin-manager.version>[2.0,2.1)</plugin-manager.version>
         <abcd.version>[1.10,1.11)</abcd.version>
         <webforms.version>[2.13,2.14)</webforms.version>
         <usmo.version>[2.8, 2.9)</usmo.version>
@@ -371,7 +369,12 @@
             </dependency>
             <dependency>
                 <groupId>com.biit</groupId>
-                <artifactId>plugin-manager</artifactId>
+                <artifactId>plugin-manager-core</artifactId>
+                <version>${plugin-manager.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>plugin-manager-interfaces</artifactId>
                 <version>${plugin-manager.version}</version>
             </dependency>
             <dependency>
