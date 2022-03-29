@@ -84,6 +84,7 @@
         <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
         <maven-jar-plugin.version>2.4</maven-jar-plugin.version>
         <maven-checkstyle.version>2.17</maven-checkstyle.version>
+        <maven-assembly-plugin.version>3.3.0</maven-assembly-plugin.version>
 
         <!-- External dependencies not included on Spring Parent -->
         <org.testng.version>6.14.3</org.testng.version>
@@ -514,6 +515,12 @@
                 <groupId>org.pf4j</groupId>
                 <artifactId>pf4j-spring</artifactId>
                 <version>${pf4j-spring.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>slf4j-reload4j</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.dom4j</groupId>
@@ -574,6 +581,17 @@
                 <groupId>jaxen</groupId>
                 <artifactId>jaxen</artifactId>
                 <version>${jaxen.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-core</artifactId>
+                <version>${hibernate.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>slf4j-reload4j</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <!-- Testing -->
             <dependency>
