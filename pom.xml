@@ -171,7 +171,7 @@
         <cipher.version>[0, 1)</cipher.version>
         <des-encryption.version>[1.0,1.1)</des-encryption.version>
         <storableobject-persistence-manager.version>[1.0,1.1)</storableobject-persistence-manager.version>
-        <drools-engine.version>[1.0,1.1)</drools-engine.version>
+        <drools-engine.version>[1.1,1.2)</drools-engine.version>
         <plugin-manager.version>[2.0,2.1)</plugin-manager.version>
         <abcd.version>[1.10,1.11)</abcd.version>
         <webforms.version>[2.13,2.14)</webforms.version>
@@ -633,11 +633,18 @@
                 <artifactId>maven-project-info-reports-plugin</artifactId>
                 <version>${maven-project-info-reports-plugin.version}</version>
             </plugin>
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>${maven-javadoc-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
             <plugin>
                 <groupId>com.github.spotbugs</groupId>
