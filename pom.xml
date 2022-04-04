@@ -133,16 +133,16 @@
         <hibernate-jcache.version>5.4.2.Final</hibernate-jcache.version>
         <jjwt.version>0.9.1</jjwt.version>
         <modelmapper.version>2.3.9</modelmapper.version>
-        <apache-httpclient.version>4.5.3</apache-httpclient.version>
+        <apache-httpclient.version>4.5.13</apache-httpclient.version>
         <httpmime.version>${apache-httpclient.version}</httpmime.version>
         <springdoc-openapi.version>1.6.6</springdoc-openapi.version>
         <mockito.version>4.4.0</mockito.version>
+        <opencsv.version>4.4</opencsv.version>
 
         <!-- BiiT Dependencies -->
         <biit-common-utils.version>[1.1,1.2)</biit-common-utils.version>
         <rest-generic-client.version>[1.0,1.1)</rest-generic-client.version>
         <event-structure.version>[1.0,1.1)</event-structure.version>
-        <cipher.version>[0, 1)</cipher.version>
         <user-manager.version>[0.2,0.3)</user-manager.version>
         <liferay-authentication-client.version>[1.0,1.1)</liferay-authentication-client.version>
         <liferay-knowledge-base.version>[1.0,1.1)</liferay-knowledge-base.version>
@@ -170,7 +170,6 @@
         <form-result-xls.version>[1.0,1.1)</form-result-xls.version>
         <database-encryptor.version>[0.2,0.3)</database-encryptor.version>
         <messagebird-client.version>[1.0,1.1)</messagebird-client.version>
-        <cipher.version>[0, 1)</cipher.version>
         <des-encryption.version>[1.0,1.1)</des-encryption.version>
         <storableobject-persistence-manager.version>[1.0,1.1)</storableobject-persistence-manager.version>
         <drools-engine.version>[1.1,1.2)</drools-engine.version>
@@ -182,6 +181,7 @@
         <kafka-client.version>[1.1,1.2)</kafka-client.version>
         <fact-manager.version>[0.1,0.2)</fact-manager.version>
         <biit-cipher.version>[1.0,1.1)</biit-cipher.version>
+        <user-manager-database.version>[0.0,0.1)</user-manager-database.version>
     </properties>
 
     <dependencyManagement>
@@ -189,7 +189,7 @@
             <dependency>
                 <groupId>com.biit</groupId>
                 <artifactId>cipher</artifactId>
-                <version>${cipher.version}</version>
+                <version>${biit-cipher.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.biit</groupId>
@@ -449,8 +449,8 @@
             </dependency>
             <dependency>
                 <groupId>com.biit</groupId>
-                <artifactId>cipher</artifactId>
-                <version>${biit-cipher.version}</version>
+                <artifactId>user-manager-database</artifactId>
+                <version>${user-manager-database.version}</version>
             </dependency>
 
 
@@ -606,6 +606,11 @@
                         <artifactId>slf4j-reload4j</artifactId>
                     </exclusion>
                 </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>com.opencsv</groupId>
+                <artifactId>opencsv</artifactId>
+                <version>${opencsv.version}</version>
             </dependency>
             <!-- Testing -->
             <dependency>
