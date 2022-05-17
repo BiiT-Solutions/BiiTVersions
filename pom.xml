@@ -140,6 +140,7 @@
         <opencsv.version>4.4</opencsv.version>
         <javax.mail.version>1.6.2</javax.mail.version>
         <javax.interceptor-api.version>1.2.2</javax.interceptor-api.version>
+        <javax.servlet-api.version>2.5</javax.servlet-api.version>
 
         <!-- BiiT Dependencies -->
         <biit-common-utils.version>[1.1,1.2)</biit-common-utils.version>
