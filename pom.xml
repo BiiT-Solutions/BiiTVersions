@@ -466,6 +466,11 @@
                 <artifactId>rest-server-security</artifactId>
                 <version>${biit-rest-server.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>rest-server-defaults</artifactId>
+                <version>${biit-rest-server.version}</version>
+            </dependency>
 
 
             <!-- External Dependencies -->
