@@ -458,7 +458,12 @@
             </dependency>
             <dependency>
                 <groupId>com.biit</groupId>
-                <artifactId>rest-server</artifactId>
+                <artifactId>rest-server-definitions</artifactId>
+                <version>${biit-rest-server.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>rest-server-security</artifactId>
                 <version>${biit-rest-server.version}</version>
             </dependency>
 
