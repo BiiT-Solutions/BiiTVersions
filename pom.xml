@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <name>BiiT Versions</name>
@@ -30,7 +31,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.6.4</version>
-        <relativePath /> <!-- lookup parent from repository -->
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <distributionManagement>
@@ -177,6 +178,7 @@
         <des-encryption.version>[1.0,1.1)</des-encryption.version>
         <storableobject-persistence-manager.version>[1.0,1.1)</storableobject-persistence-manager.version>
         <drools-engine.version>[1.1,1.2)</drools-engine.version>
+        <baseform-drools-engine.version>[1.0,1.1)</baseform-drools-engine.version>
         <plugin-manager.version>[2.0,2.1)</plugin-manager.version>
         <abcd.version>[1.10,1.11)</abcd.version>
         <webforms.version>[2.13,2.14)</webforms.version>
@@ -376,6 +378,11 @@
                 <groupId>com.biit</groupId>
                 <artifactId>drools-engine-interfaces</artifactId>
                 <version>${drools-engine.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>baseform-drools-engine-core</artifactId>
+                <version>${baseform-drools-engine.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.biit.security</groupId>
