@@ -466,6 +466,11 @@
             </dependency>
             <dependency>
                 <groupId>com.biit</groupId>
+                <artifactId>rest-server-dto</artifactId>
+                <version>${biit-rest-server.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
                 <artifactId>rest-server-definitions</artifactId>
                 <version>${biit-rest-server.version}</version>
             </dependency>
