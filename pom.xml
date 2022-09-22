@@ -188,7 +188,7 @@
         <fact-manager.version>[0.1,0.2)</fact-manager.version>
         <biit-cipher.version>[1.0,1.1)</biit-cipher.version>
         <user-manager-database.version>[0.0,0.1)</user-manager-database.version>
-        <biit-rest-server.version>[0.0,0.1)</biit-rest-server.version>
+        <biit-rest-server.version>[0.1,0.2)</biit-rest-server.version>
     </properties>
 
     <dependencyManagement>
