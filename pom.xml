@@ -143,6 +143,7 @@
         <javax.interceptor-api.version>1.2.2</javax.interceptor-api.version>
         <javax.servlet-api.version>2.5</javax.servlet-api.version>
         <javax.annotation-api.version>1.3.2</javax.annotation-api.version>
+        <commons-net.version>3.8.0</commons-net.version>
 
         <!-- BiiT Dependencies -->
         <biit-common-utils.version>[1.1,1.2)</biit-common-utils.version>
@@ -658,6 +659,11 @@
                 <groupId>javax.annotation</groupId>
                 <artifactId>javax.annotation-api</artifactId>
                 <version>${javax.annotation-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-net</groupId>
+                <artifactId>commons-net</artifactId>
+                <version>${commons-net.version}</version>
             </dependency>
             <!-- Testing -->
             <dependency>
