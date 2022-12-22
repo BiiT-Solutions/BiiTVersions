@@ -193,6 +193,7 @@
         <biit-cipher.version>[1.0,1.1)</biit-cipher.version>
         <user-manager-database.version>[0.0,0.1)</user-manager-database.version>
         <biit-rest-server.version>[0.1,0.2)</biit-rest-server.version>
+        <gotify-client.version>[0.1,0.2)</gotify-client.version>
     </properties>
 
     <dependencyManagement>
@@ -487,6 +488,11 @@
                 <groupId>com.biit</groupId>
                 <artifactId>rest-server-defaults</artifactId>
                 <version>${biit-rest-server.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>gotify-client</artifactId>
+                <version>${gotify-client.version}</version>
             </dependency>
 
 
