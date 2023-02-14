@@ -461,6 +461,11 @@
             </dependency>
             <dependency>
                 <groupId>com.biit</groupId>
+                <artifactId>fact-manager-rest-client</artifactId>
+                <version>${fact-manager.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
                 <artifactId>user-manager-database</artifactId>
                 <version>${user-manager-database.version}</version>
             </dependency>
