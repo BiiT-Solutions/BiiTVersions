@@ -194,6 +194,7 @@
         <biit-rest-server.version>[0.1,0.2)</biit-rest-server.version>
         <rest-services-security.version>[1.0,1.1)</rest-services-security.version>
         <gotify-client.version>[0.0,0.1)</gotify-client.version>
+        <user-manager-system.version>[0.1,0.2)</user-manager-system.version>
     </properties>
 
     <dependencyManagement>
@@ -508,6 +509,41 @@
                 <groupId>com.biit</groupId>
                 <artifactId>rest-services-security</artifactId>
                 <version>${rest-services-security.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>user-manager-system-persistence</artifactId>
+                <version>${user-manager-system.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>user-manager-system-core</artifactId>
+                <version>${user-manager-system.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>user-manager-system-dto</artifactId>
+                <version>${user-manager-system.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>user-manager-system-logger</artifactId>
+                <version>${user-manager-system.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>user-manager-system-rest</artifactId>
+                <version>${user-manager-system.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>user-manager-system-rest-client</artifactId>
+                <version>${user-manager-system.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>user-manager-system-test</artifactId>
+                <version>${user-manager-system.version}</version>
             </dependency>
 
 
