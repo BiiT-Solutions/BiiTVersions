@@ -153,7 +153,7 @@
         <biit-common-utils.version>[1.1,1.2)</biit-common-utils.version>
         <rest-generic-client.version>[1.1, 1.2)</rest-generic-client.version>
         <event-structure.version>[1.0,1.1)</event-structure.version>
-        <user-manager.version>[0.2,0.3)</user-manager.version>
+        <user-manager.version>[1.0,1.1)</user-manager.version>
         <liferay-authentication-client.version>[1.0,1.1)</liferay-authentication-client.version>
         <liferay-knowledge-base.version>[1.0,1.1)</liferay-knowledge-base.version>
         <liferay-configuration-reader.version>[1.0,2.0)</liferay-configuration-reader.version>
