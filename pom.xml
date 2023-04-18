@@ -551,6 +551,11 @@
                 <artifactId>user-manager-system-test</artifactId>
                 <version>${user-manager-system.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
+                <artifactId>user-manager-system-security</artifactId>
+                <version>${user-manager-system.version}</version>
+            </dependency>
 
 
             <!-- External Dependencies -->
