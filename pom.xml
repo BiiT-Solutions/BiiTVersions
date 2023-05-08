@@ -62,6 +62,8 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.jdk.version>8</java.jdk.version>
         <java.version>${java.jdk.version}</java.version>
+        <java-latest.jdk.version>17</java-latest.jdk.version>
+        <java-latest.version>${java-latest.jdk.version}</java-latest.version>
 
         <!-- Maven plugins -->
         <maven-resources-plugin.version>2.7</maven-resources-plugin.version>
