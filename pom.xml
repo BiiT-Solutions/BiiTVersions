@@ -4,7 +4,7 @@
     <name>BiiT Versions</name>
     <groupId>com.biit</groupId>
     <artifactId>versions</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.1</version>
     <packaging>pom</packaging>
     <description>BiiT Parent Project with all dependencies versions</description>
 
@@ -30,7 +30,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.1.0</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath /> <!-- lookup parent from repository -->
     </parent>
 
     <distributionManagement>
@@ -49,7 +49,7 @@
     <scm>
         <connection>scm:git:git.biit-solutions.com:BiiT/BiiTVersions.git</connection>
         <developerConnection>scm:git:git.biit-solutions.com:BiiT/BiiTVersions.git</developerConnection>
-        <tag>biit-versions</tag>
+        <tag>versions-1.0.1</tag>
     </scm>
 
     <properties>
