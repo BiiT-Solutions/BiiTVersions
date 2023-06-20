@@ -60,6 +60,8 @@
         <project.encoding>UTF-8</project.encoding>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java-old.jdk.version>8</java-old.jdk.version>
+        <java-old.version>${java-old.jdk.version}</java-old.version>
         <java.jdk.version>8</java.jdk.version>
         <java.version>${java.jdk.version}</java.version>
         <java-latest.jdk.version>17</java-latest.jdk.version>
