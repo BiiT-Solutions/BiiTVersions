@@ -105,7 +105,7 @@
         <vaadin-selenium.version>2.46.0</vaadin-selenium.version>
         <flowable.version>7.0.0.M1</flowable.version>
         <zip4j.version>1.3.2</zip4j.version>
-        <batik.version>1.7</batik.version>
+        <batik.version>1.17</batik.version>
         <javax.interceptor.version>3.1</javax.interceptor.version>
         <cors-filter.version>2.4</cors-filter.version>
         <jsonwebtoken.version>0.7.0</jsonwebtoken.version>
@@ -113,7 +113,6 @@
         <jbool_expressions.version>1.8</jbool_expressions.version>
         <openpdf.version>1.3.30</openpdf.version>
         <mybatis.version>3.5.9</mybatis.version>
-        <batik.version>1.8</batik.version>
         <xmlgraphics-commons.version>2.1</xmlgraphics-commons.version>
         <c3p0.version>0.9.5.5</c3p0.version>
         <ehcache.version>3.10.8</ehcache.version>
