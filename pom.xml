@@ -47,8 +47,8 @@
     </distributionManagement>
 
     <scm>
-        <connection>scm:git:git.biit-solutions.com:BiiT/BiiTVersions.git</connection>
-        <developerConnection>scm:git:git.biit-solutions.com:BiiT/BiiTVersions.git</developerConnection>
+        <connection>scm:git:git.biit-solutions.com:Java/BiiTVersions.git</connection>
+        <developerConnection>scm:git:git.biit-solutions.com:Java/BiiTVersions.git</developerConnection>
         <tag>biit-versions</tag>
     </scm>
 
