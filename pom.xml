@@ -161,7 +161,8 @@
         <apache-kafka.version>3.4.0</apache-kafka.version>
         <awaitility.version>4.2.0</awaitility.version>
         <jakarta.ws.rs-api.version>3.1.0</jakarta.ws.rs-api.version>
-        <solr-solrj.version>9.3.0</solr-solrj.version>
+        <solr.version>9.3.0</solr.version>
+        <solr-solrj.version>${solr.version}</solr-solrj.version>
 
         <!-- BiiT Dependencies -->
         <biit-common-utils.version>[1.2,1.3)</biit-common-utils.version>
@@ -771,6 +772,13 @@
                 <artifactId>solr-solrj</artifactId>
                 <version>${solr-solrj.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.apache.solr</groupId>
+                <artifactId>solr-core</artifactId>
+                <version>${solr.version}</version>
+            </dependency>
+
+
             <!-- Testing -->
             <dependency>
                 <groupId>org.testng</groupId>
