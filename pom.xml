@@ -525,6 +525,11 @@
             </dependency>
             <dependency>
                 <groupId>com.biit</groupId>
+                <artifactId>rest-server-utils</artifactId>
+                <version>${biit-rest-server.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit</groupId>
                 <artifactId>gotify-client</artifactId>
                 <version>${gotify-client.version}</version>
             </dependency>
