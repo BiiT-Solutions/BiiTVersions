@@ -164,6 +164,7 @@
         <solr.version>9.3.0</solr.version>
         <solr-solrj.version>${solr.version}</solr-solrj.version>
         <seaweedfs-client.version>3.55</seaweedfs-client.version>
+        <qr-code.version>0.3.0</qr-code.version>
 
         <!-- BiiT Dependencies -->
         <biit-common-utils.version>[1.2,1.3)</biit-common-utils.version>
@@ -802,6 +803,11 @@
                 <groupId>org.apache.solr</groupId>
                 <artifactId>solr-core</artifactId>
                 <version>${solr.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.simonscholz</groupId>
+                <artifactId>qr-code-with-logo</artifactId>
+                <version>${qr-code.version}</version>
             </dependency>
 
 
