@@ -592,6 +592,11 @@
             </dependency>
             <dependency>
                 <groupId>com.biit.appointment</groupId>
+                <artifactId>appointment-center-rest-client-test</artifactId>
+                <version>${appointment-center.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit.appointment</groupId>
                 <artifactId>appointment-center-dto</artifactId>
                 <version>${appointment-center.version}</version>
             </dependency>
