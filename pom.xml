@@ -214,6 +214,7 @@
         <user-manager-system.version>[0.3,0.4)</user-manager-system.version>
         <appointment-center.version>[1.5,1.6]</appointment-center.version>
         <task-junction.version>[1.7,1.8]</task-junction.version>
+        <nca-organization-statistics.version>[0.0,0.1]</nca-organization-statistics.version>
     </properties>
 
     <dependencyManagement>
@@ -598,6 +599,11 @@
                 <groupId>com.biit.appointment</groupId>
                 <artifactId>appointment-center-dto</artifactId>
                 <version>${appointment-center.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit.nca</groupId>
+                <artifactId>nca-organization-statistics</artifactId>
+                <version>${nca-organization-statistics.version}</version>
             </dependency>
 
 
