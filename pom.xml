@@ -188,6 +188,7 @@
         <form-structure-orbeon.version>[1.1,1.2)</form-structure-orbeon.version>
         <orbeon-form-reader.version>[1.1, 1.2)</orbeon-form-reader.version>
         <infographic-engine.version>[1.0,1.1)</infographic-engine.version>
+        <infographic-engine-v2.version>[2.2,2.3)</infographic-engine-v2.version>
         <bean-hot-deployer.version>[1.1,1.2)</bean-hot-deployer.version>
         <orbissport-patient-infographic-engine.version>[1.0,1.1)</orbissport-patient-infographic-engine.version>
         <orbissport-company-infographic-engine.version>[1.0,1.1)</orbissport-company-infographic-engine.version>
@@ -198,7 +199,7 @@
         <des-encryption.version>[1.0,1.1)</des-encryption.version>
         <storableobject-persistence-manager.version>[1.1,1.2)</storableobject-persistence-manager.version>
         <drools-engine.version>[1.2,1.3)</drools-engine.version>
-        <baseform-drools-engine.version>[1.0,1.1)</baseform-drools-engine.version>
+        <baseform-drools-engine.version>[1.2,1.3)</baseform-drools-engine.version>
         <plugin-manager.version>[2.1,2.2)</plugin-manager.version>
         <abcd.version>[1.10,1.11)</abcd.version>
         <webforms.version>[2.13,2.14)</webforms.version>
@@ -309,6 +310,16 @@
                 <groupId>com.biit</groupId>
                 <artifactId>infographic-engine</artifactId>
                 <version>${infographic-engine.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit.infographic</groupId>
+                <artifactId>infographic-engine-persistence</artifactId>
+                <version>${infographic-engine-v2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit.infographic</groupId>
+                <artifactId>infographic-engine-core</artifactId>
+                <version>${infographic-engine-v2.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.biit</groupId>
