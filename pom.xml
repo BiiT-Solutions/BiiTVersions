@@ -216,7 +216,7 @@
         <user-manager-system.version>[0.3,0.4)</user-manager-system.version>
         <appointment-center.version>[1.5,1.6]</appointment-center.version>
         <task-junction.version>[1.7,1.8]</task-junction.version>
-        <nca-organization-statistics.version>[0.0,0.1]</nca-organization-statistics.version>
+        <nca-organization-statistics.version>[0.1,0.2]</nca-organization-statistics.version>
     </properties>
 
     <dependencyManagement>
