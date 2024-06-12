@@ -137,6 +137,7 @@
         <reflections.version>0.10.2</reflections.version>
         <jersey-hk2.version>2.35</jersey-hk2.version>
         <mysql-connector.version>8.0.33</mysql-connector.version>
+        <postgresql.version>42.7.3</postgresql.version>
         <hibernate-ehcache.version>6.0.0.Alpha7</hibernate-ehcache.version>
         <hibernate-entitymanager.version>6.0.0.Alpha7</hibernate-entitymanager.version>
         <hibernate-jcache.version>6.2.0.CR2</hibernate-jcache.version>
@@ -724,6 +725,11 @@
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-j</artifactId>
                 <version>${mysql-connector.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.postgresql</groupId>
+                <artifactId>postgresql</artifactId>
+                <version>${postgresql.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.hibernate.orm</groupId>
