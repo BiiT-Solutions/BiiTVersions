@@ -217,6 +217,7 @@
         <appointment-center.version>[1.5,1.6]</appointment-center.version>
         <task-junction.version>[1.7,1.8]</task-junction.version>
         <nca-organization-statistics.version>[0.1,0.2]</nca-organization-statistics.version>
+        <cadt-profile-matcher.version>[0.1,0.2]</cadt-profile-matcher.version>
     </properties>
 
     <dependencyManagement>
@@ -616,6 +617,11 @@
                 <groupId>com.biit.nca</groupId>
                 <artifactId>nca-organization-statistics</artifactId>
                 <version>${nca-organization-statistics.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit.cadt</groupId>
+                <artifactId>cadt-profile-matcher</artifactId>
+                <version>${cadt-profile-matcher.version}</version>
             </dependency>
 
 
