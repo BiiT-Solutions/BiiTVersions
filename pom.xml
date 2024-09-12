@@ -164,7 +164,7 @@
         <jakarta.ws.rs-api.version>3.1.0</jakarta.ws.rs-api.version>
         <solr.version>9.3.0</solr.version>
         <solr-solrj.version>${solr.version}</solr-solrj.version>
-        <seaweedfs-client.version>3.55</seaweedfs-client.version>
+        <seaweedfs-client.version>3.59</seaweedfs-client.version>
         <qr-code.version>0.3.0</qr-code.version>
 
         <!-- BiiT Dependencies -->
