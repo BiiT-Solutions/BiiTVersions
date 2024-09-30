@@ -887,6 +887,11 @@
                 <artifactId>javacv</artifactId>
                 <version>${javacv.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.bytedeco</groupId>
+                <artifactId>javacv-platform</artifactId>
+                <version>${javacv.version}</version>
+            </dependency>
 
 
 
