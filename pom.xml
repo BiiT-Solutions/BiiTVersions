@@ -169,6 +169,7 @@
         <tika.version>2.9.2</tika.version>
         <opensearch-rest-client.version>2.11.0</opensearch-rest-client.version>
         <opensearch-java.version>2.8.0</opensearch-java.version>
+        <javacv.version>1.5.10</javacv.version>
 
         <!-- BiiT Dependencies -->
         <biit-common-utils.version>[1.2,1.3)</biit-common-utils.version>
@@ -876,6 +877,17 @@
                 <artifactId>opensearch-java</artifactId>
                 <version>${opensearch-java.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.github.chrislusf</groupId>
+                <artifactId>seaweedfs-client</artifactId>
+                <version>${seaweedfs-client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.bytedeco</groupId>
+                <artifactId>javacv</artifactId>
+                <version>${javacv.version}</version>
+            </dependency>
+
 
 
             <!-- Testing -->
