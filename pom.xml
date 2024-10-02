@@ -113,6 +113,7 @@
         <commons-logging.version>1.2</commons-logging.version>
         <jbool_expressions.version>1.8</jbool_expressions.version>
         <openpdf.version>1.3.30</openpdf.version>
+        <pdfbox.version>3.0.3</pdfbox.version>
         <mybatis.version>3.5.9</mybatis.version>
         <xmlgraphics-commons.version>2.1</xmlgraphics-commons.version>
         <c3p0.version>0.9.5.5</c3p0.version>
@@ -649,6 +650,11 @@
                 <groupId>com.github.librepdf</groupId>
                 <artifactId>openpdf</artifactId>
                 <version>${openpdf.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.pdfbox</groupId>
+                <artifactId>pdfbox</artifactId>
+                <version>${pdfbox.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.mybatis</groupId>
