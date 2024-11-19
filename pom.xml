@@ -640,6 +640,11 @@
                 <version>${knowledge-system.version}</version>
             </dependency>
             <dependency>
+                <groupId>com.biit.ks</groupId>
+                <artifactId>knowledge-system-rest-client-test</artifactId>
+                <version>${knowledge-system.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>com.biit.nca</groupId>
                 <artifactId>nca-organization-statistics</artifactId>
                 <version>${nca-organization-statistics.version}</version>
