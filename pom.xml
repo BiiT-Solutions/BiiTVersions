@@ -220,6 +220,7 @@
         <gotify-client.version>[0.1,0.2)</gotify-client.version>
         <user-manager-system.version>[0.4,0.5)</user-manager-system.version>
         <appointment-center.version>[1.5,1.6]</appointment-center.version>
+        <knowledge-system.version>[1.2, 1.3]</knowledge-system.version>
         <task-junction.version>[1.7,1.8]</task-junction.version>
         <nca-organization-statistics.version>[0.1,0.2]</nca-organization-statistics.version>
         <cadt-profile-matcher.version>[0.1,0.2]</cadt-profile-matcher.version>
@@ -622,6 +623,21 @@
                 <groupId>com.biit.appointment</groupId>
                 <artifactId>appointment-center-dto</artifactId>
                 <version>${appointment-center.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit.ks</groupId>
+                <artifactId>knowledge-system-dto</artifactId>
+                <version>${knowledge-system.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit.ks</groupId>
+                <artifactId>knowledge-system-core</artifactId>
+                <version>${knowledge-system.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit.ks</groupId>
+                <artifactId>knowledge-system-rest-client</artifactId>
+                <version>${knowledge-system.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.biit.nca</groupId>
