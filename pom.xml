@@ -4,7 +4,7 @@
     <name>BiiT Versions</name>
     <groupId>com.biit</groupId>
     <artifactId>versions</artifactId>
-    <version>1.0.50-SNAPSHOT</version>
+    <version>1.0.51-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>BiiT Parent Project with all dependencies versions</description>
 
