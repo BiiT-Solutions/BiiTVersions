@@ -222,7 +222,7 @@
         <knowledge-system.version>[1.2, 1.3]</knowledge-system.version>
         <task-junction.version>[1.7,1.8]</task-junction.version>
         <nca-organization-statistics.version>[0.1,0.2]</nca-organization-statistics.version>
-        <frustration-teamworking-organization-statistics.version>[0.1,0.2]</frustration-teamworking-organization-statistics.version>
+        <frustration-teamworking-organization-statistics.version>[0.2,0.3]</frustration-teamworking-organization-statistics.version>
         <cadt-profile-matcher.version>[0.1,0.2]</cadt-profile-matcher.version>
     </properties>
 
