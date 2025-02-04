@@ -224,7 +224,7 @@
         <nca-organization-statistics.version>[0.1,0.2]</nca-organization-statistics.version>
         <frustration-teamworking-organization-statistics.version>[0.2,0.3]</frustration-teamworking-organization-statistics.version>
         <cadt-profile-matcher.version>[0.1,0.2]</cadt-profile-matcher.version>
-        <cadt-translator.version>[0.1,0.2]</cadt-translator.version>
+        <infographic-translator.version>[0.1,0.2]</infographic-translator.version>
     </properties>
 
     <dependencyManagement>
@@ -656,9 +656,9 @@
                 <version>${cadt-profile-matcher.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit.cadt</groupId>
-                <artifactId>cadt-translator</artifactId>
-                <version>${cadt-translator.version}</version>
+                <groupId>com.biit.infographic</groupId>
+                <artifactId>infographic-translator</artifactId>
+                <version>${infographic-translator.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.biit.frustration</groupId>
