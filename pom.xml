@@ -4,7 +4,7 @@
     <name>BiiT Versions</name>
     <groupId>com.biit</groupId>
     <artifactId>versions</artifactId>
-    <version>1.0.57-SNAPSHOT</version>
+    <version>1.0.59-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>BiiT Parent Project with all dependencies versions</description>
 
@@ -148,6 +148,7 @@
         <httpmime.version>${apache-httpclient.version}</httpmime.version>
         <springdoc-openapi.version>2.1.0</springdoc-openapi.version>
         <springdoc-openapi-security.version>1.7.0</springdoc-openapi-security.version>
+        <swagger-annotations.version>2.2.25</swagger-annotations.version>
         <mockito.version>4.4.0</mockito.version>
         <opencsv.version>4.4</opencsv.version>
         <javax.mail.version>1.6.2</javax.mail.version>
@@ -824,6 +825,12 @@
                 <groupId>org.springdoc</groupId>
                 <artifactId>springdoc-openapi-security</artifactId>
                 <version>${springdoc-openapi-security.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.swagger.core.v3</groupId>
+                <artifactId>swagger-annotations</artifactId>
+                <version>${swagger-annotations.version}</version>
+                <scope>compile</scope>
             </dependency>
             <dependency>
                 <groupId>jaxen</groupId>
