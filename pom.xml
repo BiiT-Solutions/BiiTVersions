@@ -630,6 +630,11 @@
             </dependency>
             <dependency>
                 <groupId>com.biit.appointment</groupId>
+                <artifactId>appointment-center-core</artifactId>
+                <version>${appointment-center.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.biit.appointment</groupId>
                 <artifactId>google-calendar</artifactId>
                 <version>${appointment-center-google-calendar.version}</version>
             </dependency>
