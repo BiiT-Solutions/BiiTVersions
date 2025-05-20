@@ -199,7 +199,7 @@
         <orbissport-patient-infographic-engine.version>[1.0,1.1)</orbissport-patient-infographic-engine.version>
         <orbissport-company-infographic-engine.version>[1.0,1.1)</orbissport-company-infographic-engine.version>
         <form-result-pdf.version>[1.1,1.2)</form-result-pdf.version>
-        <form-result-xls.version>[1.1,1.2)</form-result-xls.version>
+        <form-result-xls.version>[1.2,1.3)</form-result-xls.version>
         <database-encryptor.version>[0.3,0.4)</database-encryptor.version>
         <messagebird-client.version>[1.1,1.2)</messagebird-client.version>
         <des-encryption.version>[1.0,1.1)</des-encryption.version>
