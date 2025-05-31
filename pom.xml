@@ -224,6 +224,7 @@
         <user-manager-system.version>[0.4,0.5)</user-manager-system.version>
         <appointment-center.version>[1.6,1.7]</appointment-center.version>
         <appointment-center-google-calendar.version>[0.2,0.3)</appointment-center-google-calendar.version>
+        <appointment-center-ms-calendar.version>[0.0,0.1)</appointment-center-ms-calendar.version>
         <knowledge-system.version>[1.2, 1.3]</knowledge-system.version>
         <task-junction.version>[1.7,1.8]</task-junction.version>
         <nca-organization-statistics.version>[0.1,0.2]</nca-organization-statistics.version>
