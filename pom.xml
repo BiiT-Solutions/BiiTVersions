@@ -653,6 +653,11 @@
                 <version>${appointment-center-google-calendar.version}</version>
             </dependency>
             <dependency>
+                <groupId>com.biit.appointment</groupId>
+                <artifactId>ms-calendar</artifactId>
+                <version>${appointment-center-ms-calendar.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>com.biit.ks</groupId>
                 <artifactId>knowledge-system-dto</artifactId>
                 <version>${knowledge-system.version}</version>
