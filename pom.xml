@@ -939,6 +939,11 @@
                 <version>${qr-code.version}</version>
             </dependency>
             <dependency>
+                <groupId>io.github.simonscholz</groupId>
+                <artifactId>qr-code-with-logo-svg</artifactId>
+                <version>${qr-code.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.apache.tika</groupId>
                 <artifactId>tika-core</artifactId>
                 <version>${tika.version}</version>
