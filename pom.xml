@@ -167,7 +167,7 @@
         <solr.version>9.3.0</solr.version>
         <solr-solrj.version>${solr.version}</solr-solrj.version>
         <seaweedfs-client.version>3.59</seaweedfs-client.version>
-        <qr-code.version>0.3.0</qr-code.version>
+        <qr-code.version>0.4.0</qr-code.version>
         <tika.version>2.9.2</tika.version>
         <opensearch-rest-client.version>2.11.0</opensearch-rest-client.version>
         <opensearch-java.version>2.8.0</opensearch-java.version>
