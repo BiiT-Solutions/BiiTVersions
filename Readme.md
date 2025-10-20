@@ -9,7 +9,7 @@ As this is a maven `pom.xml` file, the way to use it is to define it as a parent
 
 ```
 <parent>
-    <groupId>com.biit</groupId>
+    <groupId>com.biit-solutions</groupId>
     <artifactId>versions</artifactId>
     <version>[0,1)</version>
     <relativePath/> <!-- lookup parent from repository -->

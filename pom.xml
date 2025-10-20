@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <name>BiiT Versions</name>
-    <groupId>com.biit</groupId>
+    <groupId>com.biit-solutions</groupId>
     <artifactId>versions</artifactId>
     <version>1.0.85-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -42,9 +42,9 @@
 
     <distributionManagement>
         <repository>
-            <id>central</id>
+            <id>ossrh</id>
             <name>Maven Central</name>
-            <url>https://repo.maven.apache.org/maven2</url>
+            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
         <snapshotRepository>
             <id>github</id>
@@ -182,6 +182,7 @@
         <javacv.version>1.5.10</javacv.version>
         <webdrivermanager.version>5.8.0</webdrivermanager.version>
         <selenium.version>4.33.0</selenium.version>
+        <maven-deploy.version>0.9.0</maven-deploy.version>
 
         <!-- BiiT Dependencies -->
         <biit-common-utils.version>[1.2,1.3)</biit-common-utils.version>
@@ -245,22 +246,22 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>cipher</artifactId>
                 <version>${biit-cipher.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>common-utils</artifactId>
                 <version>${biit-common-utils.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>vaadin-common</artifactId>
                 <version>${biit-vaadin-common.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>vaadin-common-widgetset</artifactId>
                 <version>${biit-vaadin-common.version}</version>
             </dependency>
@@ -271,12 +272,12 @@
                 <version>${jointjs-widget.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>database-encryptor</artifactId>
                 <version>${database-encryptor.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>user-manager</artifactId>
                 <version>${user-manager.version}</version>
             </dependency>
@@ -301,37 +302,37 @@
                 <version>${liferay-configuration-reader.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>jpa-schema-exporter</artifactId>
                 <version>${jpa-schema-exporter.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>flowable-liferay-users</artifactId>
                 <version>${flowable-liferay-users.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>omnia-proxy-client</artifactId>
                 <version>${omnia-proxy.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>omnia-proxy-core</artifactId>
                 <version>${omnia-proxy.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>form-runner</artifactId>
                 <version>${form-runner.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>form-runner-addon</artifactId>
                 <version>${form-runner.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>infographic-engine</artifactId>
                 <version>${infographic-engine.version}</version>
             </dependency>
@@ -346,42 +347,42 @@
                 <version>${infographic-engine-v2.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>rest-generic-client</artifactId>
                 <version>${rest-generic-client.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>bean-hot-deployer</artifactId>
                 <version>${bean-hot-deployer.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>bean-hot-deployer-core</artifactId>
                 <version>${bean-hot-deployer.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>bean-hot-deployer-annotations</artifactId>
                 <version>${bean-hot-deployer.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>orbissport-patient-infographic-engine</artifactId>
                 <version>${orbissport-patient-infographic-engine.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>orbissport-company-infographic-engine</artifactId>
                 <version>${orbissport-company-infographic-engine.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>form-result-pdf</artifactId>
                 <version>${form-result-pdf.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>form-result-xls</artifactId>
                 <version>${form-result-xls.version}</version>
             </dependency>
@@ -391,52 +392,52 @@
                 <version>${drools-submitted-form-xls.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>form-structure</artifactId>
                 <version>${form-structure.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>form-structure-submitted</artifactId>
                 <version>${form-structure-submitted.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>storableobject-persistence-manager</artifactId>
                 <version>${storableobject-persistence-manager.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>form-structure-drools</artifactId>
                 <version>${form-structure-drools.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>form-structure-orbeon</artifactId>
                 <version>${form-structure-orbeon.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>orbeon-form-reader</artifactId>
                 <version>${orbeon-form-reader.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>messagebird-client</artifactId>
                 <version>${messagebird-client.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>drools-engine-core</artifactId>
                 <version>${drools-engine.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>drools-engine-interfaces</artifactId>
                 <version>${drools-engine.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>base-form-drools-engine-core</artifactId>
                 <version>${base-form-drools-engine.version}</version>
             </dependency>
@@ -446,187 +447,187 @@
                 <version>${des-encryption.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>plugin-manager-core</artifactId>
                 <version>${plugin-manager.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>plugin-manager-interfaces</artifactId>
                 <version>${plugin-manager.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>kafka-client</artifactId>
                 <version>${kafka-client.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>kafka-client-dto</artifactId>
                 <version>${kafka-client.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>event-structure</artifactId>
                 <version>${event-structure.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>abcd-core</artifactId>
                 <version>${abcd.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>abcd-persistence</artifactId>
                 <version>${abcd.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>webforms-parser</artifactId>
                 <version>${webforms.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>webforms-persistence</artifactId>
                 <version>${webforms.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>webforms-core</artifactId>
                 <version>${webforms.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>usmo-persistence</artifactId>
                 <version>${usmo.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>usmo-core</artifactId>
                 <version>${usmo.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>fact-manager-persistence</artifactId>
                 <version>${fact-manager.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>fact-manager-core</artifactId>
                 <version>${fact-manager.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>fact-manager-kafka</artifactId>
                 <version>${fact-manager.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>fact-manager-rest-client</artifactId>
                 <version>${fact-manager.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>user-manager-database</artifactId>
                 <version>${user-manager-database.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>rest-server-persistence</artifactId>
                 <version>${biit-rest-server.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>rest-server-dto</artifactId>
                 <version>${biit-rest-server.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>rest-server-definitions</artifactId>
                 <version>${biit-rest-server.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>rest-server-mail</artifactId>
                 <version>${biit-rest-server.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>rest-server-security</artifactId>
                 <version>${biit-rest-server.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>rest-server-security-client</artifactId>
                 <version>${biit-rest-server.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>rest-server-defaults</artifactId>
                 <version>${biit-rest-server.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>rest-server-rest</artifactId>
                 <version>${biit-rest-server.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>rest-server-utils</artifactId>
                 <version>${biit-rest-server.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>rest-server-websockets</artifactId>
                 <version>${biit-rest-server.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>gotify-client</artifactId>
                 <version>${gotify-client.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>rest-services-security</artifactId>
                 <version>${rest-services-security.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>user-manager-system-persistence</artifactId>
                 <version>${user-manager-system.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>user-manager-system-core</artifactId>
                 <version>${user-manager-system.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>user-manager-system-dto</artifactId>
                 <version>${user-manager-system.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>user-manager-system-logger</artifactId>
                 <version>${user-manager-system.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>user-manager-system-rest</artifactId>
                 <version>${user-manager-system.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>user-manager-system-rest-client</artifactId>
                 <version>${user-manager-system.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>user-manager-system-test</artifactId>
                 <version>${user-manager-system.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>user-manager-system-security</artifactId>
                 <version>${user-manager-system.version}</version>
             </dependency>
@@ -1016,9 +1017,19 @@
                     </dependency>
                 </dependencies>
                 <configuration>
+                    <localCheckout>true</localCheckout>
+                    <pushChanges>false</pushChanges>
+                    <mavenExecutorId>forked-path</mavenExecutorId>
+                    <arguments>-Dgpg.passphrase=${gpg.passphrase}</arguments>
                     <checkModificationExcludes>
                         <checkModificationExclude>pom.xml</checkModificationExclude>
                     </checkModificationExcludes>
+                    <!-- This action is used by release:perform -->
+                    <!-- During release:perform, enable the "release" profile -->
+                    <releaseProfiles>release</releaseProfiles>
+                    <!-- <arguments>-Dmaven.test.skipTests=true -Dmaven.test.skip=true</arguments> -->
+                    <!-- This goal is used by release:perform -->
+                    <goals>deploy</goals>
                 </configuration>
             </plugin>
             <plugin>
@@ -1115,7 +1126,17 @@
                     </execution>
                 </executions>
             </plugin>
-
+            <plugin>
+                <groupId>org.sonatype.central</groupId>
+                <artifactId>central-publishing-maven-plugin</artifactId>
+                <version>${maven-deploy.version}</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <publishingServerId>central</publishingServerId>
+                    <autoPublish>true</autoPublish>
+                    <waitUntil>published</waitUntil>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 </project>
