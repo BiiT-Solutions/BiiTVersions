@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <name>BiiT Versions</name>
@@ -22,7 +23,9 @@
 
     <licenses>
         <license>
-            <name>BiiT Software License</name>
+            <name>GNU AGPL v3</name>
+            <url>https://www.gnu.org/licenses/agpl-3.0.html</url>
+            <distribution>repo</distribution>
         </license>
     </licenses>
 
@@ -30,25 +33,20 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.1.1</version>
-        <relativePath /> <!-- lookup parent from repository -->
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <distributionManagement>
         <repository>
-            <id>central</id>
-            <name>libs-releases</name>
-            <url>https://artifactory.biit-solutions.com/artifactory/libs-release</url>
+            <id>github</id>
+            <name>BiiT-Solutions</name>
+            <url>https://maven.pkg.github.com/BiiT-Solutions/BiiTVersions</url>
         </repository>
-        <snapshotRepository>
-            <id>snapshots</id>
-            <name>libs-snapshot</name>
-            <url>https://artifactory.biit-solutions.com/artifactory/libs-snapshot</url>
-        </snapshotRepository>
     </distributionManagement>
 
     <scm>
-        <connection>scm:git:git.biit-solutions.com:Java/BiiTVersions.git</connection>
-        <developerConnection>scm:git:git.biit-solutions.com:Java/BiiTVersions.git</developerConnection>
+        <connection>scm:git:ssh://git@github.com/BiiT-Solutions/BiiTVersions.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/BiiT-Solutions/BiiTVersions.git</developerConnection>
         <tag>biit-versions</tag>
     </scm>
 
@@ -93,6 +91,7 @@
         <maven-assembly-plugin.version>3.3.0</maven-assembly-plugin.version>
         <maven-surefire-plugin.version>3.1.0</maven-surefire-plugin.version>
         <docker-maven-plugin.version>0.43.4</docker-maven-plugin.version>
+        <license-maven-plugin.version>2.7.0</license-maven-plugin.version>
 
         <!-- External dependencies not included on Spring Parent -->
         <org.testng.version>7.8.0</org.testng.version>
@@ -973,7 +972,6 @@
                 <artifactId>javacv-platform</artifactId>
                 <version>${javacv.version}</version>
             </dependency>
-
 
 
             <!-- Testing -->
