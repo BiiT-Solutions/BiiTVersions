@@ -4,7 +4,7 @@
     <name>BiiT Versions</name>
     <groupId>com.biit-solutions</groupId>
     <artifactId>versions</artifactId>
-    <version>1.0.88-SNAPSHOT</version>
+    <version>1.0.88</version>
     <packaging>pom</packaging>
     <description>BiiT Parent Project with all dependencies versions</description>
 
@@ -1135,7 +1135,6 @@
                 <configuration>
                     <publishingServerId>central</publishingServerId>
                     <autoPublish>true</autoPublish>
-                    <waitUntil>uploaded</waitUntil>
                 </configuration>
             </plugin>
             <plugin>
@@ -1149,9 +1148,6 @@
                         <goals>
                             <goal>sign</goal>
                         </goals>
-                        <configuration>
-                            <signer>bc</signer>
-                        </configuration>
                     </execution>
                 </executions>
             </plugin>
