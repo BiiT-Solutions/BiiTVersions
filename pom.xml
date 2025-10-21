@@ -1144,7 +1144,7 @@
 
     <profiles>
         <profile>
-            <id>release-sign-artifacts</id>
+            <id>sign-artifacts</id>
             <properties>
                 <maven.test.skip>true</maven.test.skip>
             </properties>
