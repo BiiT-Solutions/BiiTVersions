@@ -4,7 +4,7 @@
     <name>BiiT Versions</name>
     <groupId>com.biit-solutions</groupId>
     <artifactId>versions</artifactId>
-    <version>1.0.86-SNAPSHOT</version>
+    <version>1.0.86</version>
     <packaging>pom</packaging>
     <description>BiiT Parent Project with all dependencies versions</description>
 
@@ -101,6 +101,7 @@
         <maven-surefire-plugin.version>3.1.0</maven-surefire-plugin.version>
         <docker-maven-plugin.version>0.43.4</docker-maven-plugin.version>
         <license-maven-plugin.version>2.7.0</license-maven-plugin.version>
+        <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
 
         <!-- External dependencies not included on Spring Parent -->
         <org.testng.version>7.8.0</org.testng.version>
@@ -1134,8 +1135,21 @@
                 <configuration>
                     <publishingServerId>central</publishingServerId>
                     <autoPublish>true</autoPublish>
-                    <waitUntil>published</waitUntil>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>${maven-gpg-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
