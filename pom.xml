@@ -1135,6 +1135,7 @@
                 <configuration>
                     <publishingServerId>central</publishingServerId>
                     <autoPublish>true</autoPublish>
+                    <waitUntil>uploaded</waitUntil>
                 </configuration>
             </plugin>
             <plugin>
