@@ -839,9 +839,19 @@
                     </dependency>
                 </dependencies>
                 <configuration>
+                    <localCheckout>true</localCheckout>
+                    <pushChanges>false</pushChanges>
+                    <mavenExecutorId>forked-path</mavenExecutorId>
+                    <arguments>-Dgpg.passphrase=${gpg.passphrase}</arguments>
                     <checkModificationExcludes>
                         <checkModificationExclude>pom.xml</checkModificationExclude>
                     </checkModificationExcludes>
+                    <!-- This action is used by release:perform -->
+                    <!-- During release:perform, enable the "release" profile -->
+                    <releaseProfiles>release</releaseProfiles>
+                    <!-- <arguments>-Dmaven.test.skipTests=true -Dmaven.test.skip=true</arguments> -->
+                    <!-- This goal is used by release:perform -->
+                    <goals>deploy</goals>
                 </configuration>
             </plugin>
             <plugin>
