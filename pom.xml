@@ -2,11 +2,16 @@
     <modelVersion>4.0.0</modelVersion>
 
     <name>BiiT Versions</name>
-    <groupId>com.biit</groupId>
+    <groupId>com.biit-solutions</groupId>
     <artifactId>versions</artifactId>
     <version>0.1.99-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>BiiT Parent Project with all dependencies versions</description>
+
+    <organization>
+        <name>BiiT Sourcing Solutions S.L.</name>
+        <url>https://www.biit-solutions.com/</url>
+    </organization>
 
     <developers>
         <developer>
@@ -22,7 +27,9 @@
 
     <licenses>
         <license>
-            <name>BiiT Software License</name>
+            <name>GNU AGPL v3</name>
+            <url>https://www.gnu.org/licenses/agpl-3.0.html</url>
+            <distribution>repo</distribution>
         </license>
     </licenses>
 
@@ -35,20 +42,20 @@
 
     <distributionManagement>
         <repository>
-            <id>central</id>
-            <name>libs-releases</name>
-            <url>https://artifactory.biit-solutions.com/artifactory/libs-release</url>
+            <id>ossrh</id>
+            <name>Maven Central</name>
+            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
         <snapshotRepository>
-            <id>snapshots</id>
-            <name>libs-snapshot</name>
-            <url>https://artifactory.biit-solutions.com/artifactory/libs-snapshot</url>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/BiiT-Solutions/BiiTVersions</url>
         </snapshotRepository>
     </distributionManagement>
 
     <scm>
-        <connection>scm:git:git.biit-solutions.com:Java/BiiTVersions.git</connection>
-        <developerConnection>scm:git:git.biit-solutions.com:Java/BiiTVersions.git</developerConnection>
+        <connection>scm:git:ssh://git@github.com/BiiT-Solutions/BiiTVersions.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/BiiT-Solutions/BiiTVersions.git</developerConnection>
         <tag>biit-versions</tag>
     </scm>
 
@@ -93,6 +100,8 @@
         <maven-assembly-plugin.version>3.3.0</maven-assembly-plugin.version>
         <maven-surefire-plugin.version>3.1.0</maven-surefire-plugin.version>
         <docker-maven-plugin.version>0.43.4</docker-maven-plugin.version>
+        <license-maven-plugin.version>2.7.0</license-maven-plugin.version>
+        <maven-gpg-plugin.version>3.2.8</maven-gpg-plugin.version>
 
         <!-- External dependencies not included on Spring Parent -->
         <!-- v7.5.1 is the latest that allows java 8 -->
@@ -219,22 +228,22 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>cipher</artifactId>
                 <version>${biit-cipher.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>common-utils</artifactId>
                 <version>${biit-common-utils.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>vaadin-common</artifactId>
                 <version>${biit-vaadin-common.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>vaadin-common-widgetset</artifactId>
                 <version>${biit-vaadin-common.version}</version>
             </dependency>
@@ -245,12 +254,12 @@
                 <version>${jointjs-widget.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>database-encryptor</artifactId>
                 <version>${database-encryptor.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>user-manager</artifactId>
                 <version>${user-manager.version}</version>
             </dependency>
@@ -275,17 +284,17 @@
                 <version>${liferay-configuration-reader.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>jpa-schema-exporter</artifactId>
                 <version>${jpa-schema-exporter.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>flowable-liferay-users</artifactId>
                 <version>${flowable-liferay-users.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>orbeon.form.reader</artifactId>
                 <version>${orbeon.form.reader.version}</version>
             </dependency>
@@ -295,22 +304,22 @@
                 <version>${omnia-proxy.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>omnia-proxy-core</artifactId>
                 <version>${omnia-proxy.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>form-runner</artifactId>
                 <version>${form-runner.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>form-runner-addon</artifactId>
                 <version>${form-runner.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit</groupId>
+                <groupId>com.biit-solutions</groupId>
                 <artifactId>infographic-engine</artifactId>
                 <version>${infographic-engine.version}</version>
             </dependency>
@@ -895,6 +904,62 @@
                 <artifactId>graph-maven-plugin</artifactId>
                 <version>${graph-maven-plugin.version}</version>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.sonatype.central</groupId>
+                <artifactId>central-publishing-maven-plugin</artifactId>
+                <version>${maven-deploy.version}</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <publishingServerId>central</publishingServerId>
+                    <autoPublish>true</autoPublish>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
+
+
+    <profiles>
+        <profile>
+            <id>sign-artifacts</id>
+            <properties>
+                <maven.test.skip>true</maven.test.skip>
+            </properties>
+            <activation>
+                <property>
+                    <name>!deploySnapshot</name>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <version>${maven-gpg-plugin.version}</version>
+                        <executions>
+                            <execution>
+                                <id>sign-artifacts</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>
