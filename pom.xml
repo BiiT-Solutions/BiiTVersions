@@ -4,9 +4,10 @@
     <name>BiiT Versions</name>
     <groupId>com.biit-solutions</groupId>
     <artifactId>versions</artifactId>
-    <version>0.1.101-SNAPSHOT</version>
+    <version>0.1.101</version>
     <packaging>pom</packaging>
     <description>BiiT Parent Project with all dependencies versions</description>
+    <url>https://github.com/BiiT-Solutions</url>
 
     <organization>
         <name>BiiT Sourcing Solutions S.L.</name>
@@ -56,7 +57,7 @@
     <scm>
         <connection>scm:git:ssh://git@github.com/BiiT-Solutions/BiiTVersions.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/BiiT-Solutions/BiiTVersions.git</developerConnection>
-        <tag>biit-versions</tag>
+        <tag>versions-0.1.101</tag>
     </scm>
 
     <properties>
