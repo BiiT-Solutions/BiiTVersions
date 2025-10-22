@@ -283,22 +283,22 @@
                 <version>${user-manager.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit.liferay</groupId>
+                <groupId>com.biit-solutions.liferay</groupId>
                 <artifactId>liferay-service-common</artifactId>
                 <version>${liferay-service-common.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit.liferay</groupId>
+                <groupId>com.biit-solutions.liferay</groupId>
                 <artifactId>liferay-authentication-client</artifactId>
                 <version>${liferay-authentication-client.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit.liferay</groupId>
+                <groupId>com.biit-solutions.liferay</groupId>
                 <artifactId>liferay-knowledge-base</artifactId>
                 <version>${liferay-knowledge-base.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit.liferay</groupId>
+                <groupId>com.biit-solutions.liferay</groupId>
                 <artifactId>liferay-configuration-reader</artifactId>
                 <version>${liferay-configuration-reader.version}</version>
             </dependency>
