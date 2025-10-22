@@ -11,8 +11,18 @@ As this is a maven `pom.xml` file, the way to use it is to define it as a parent
 <parent>
     <groupId>com.biit-solutions</groupId>
     <artifactId>versions</artifactId>
-    <version>[0,1)</version>
+    <version>[1.0,1.1)</version>
     <relativePath/> <!-- lookup parent from repository -->
 </parent>
 ```
 
+For older applications such as Webforms or ABCD, you need to use an older version:
+
+```
+<parent>
+    <groupId>com.biit-solutions</groupId>
+    <artifactId>versions</artifactId>
+    <version>[0.1,0.2)</version>
+    <relativePath/> <!-- lookup parent from repository -->
+</parent>
+```
