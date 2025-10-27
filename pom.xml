@@ -171,7 +171,7 @@
         <selenium-webdriver-manager.version>5.4.1</selenium-webdriver-manager.version>
         <jsoup.version>1.15.3</jsoup.version>
         <jsoup-vaadin7.version>1.12.1</jsoup-vaadin7.version>
-        <confluent-kafka.version>7.4.0</confluent-kafka.version>
+        <confluent-kafka.version>7.7.6</confluent-kafka.version>
         <apache-kafka.version>3.4.0</apache-kafka.version>
         <awaitility.version>4.3.0</awaitility.version>
         <jakarta.ws.rs-api.version>3.1.0</jakarta.ws.rs-api.version>
