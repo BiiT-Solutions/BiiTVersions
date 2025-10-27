@@ -430,17 +430,17 @@
                 <version>${messagebird-client.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit-solutions</groupId>
+                <groupId>com.biit-solutions.drools</groupId>
                 <artifactId>drools-engine-core</artifactId>
                 <version>${drools-engine.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit-solutions</groupId>
+                <groupId>com.biit-solutions.drools</groupId>
                 <artifactId>drools-engine-interfaces</artifactId>
                 <version>${drools-engine.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit-solutions</groupId>
+                <groupId>com.biit-solutions.drools</groupId>
                 <artifactId>base-form-drools-engine-core</artifactId>
                 <version>${base-form-drools-engine.version}</version>
             </dependency>
