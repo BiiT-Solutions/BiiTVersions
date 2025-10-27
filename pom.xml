@@ -390,7 +390,7 @@
                 <version>${form-result-xls.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit.drools</groupId>
+                <groupId>com.biit-solutions.drools</groupId>
                 <artifactId>drools-submitted-form-xls</artifactId>
                 <version>${drools-submitted-form-xls.version}</version>
             </dependency>
