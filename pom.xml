@@ -470,7 +470,7 @@
                 <version>${kafka-client.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit-solutions</groupId>
+                <groupId>com.biit-solutions.kafka</groupId>
                 <artifactId>event-structure</artifactId>
                 <version>${event-structure.version}</version>
             </dependency>
