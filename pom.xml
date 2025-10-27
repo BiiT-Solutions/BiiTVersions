@@ -4,7 +4,7 @@
     <name>BiiT Versions</name>
     <groupId>com.biit-solutions</groupId>
     <artifactId>versions</artifactId>
-    <version>1.0.98</version>
+    <version>1.0.99-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>BiiT Parent Project with all dependencies versions</description>
 
@@ -56,7 +56,7 @@
     <scm>
         <connection>scm:git:ssh://git@github.com/BiiT-Solutions/BiiTVersions.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/BiiT-Solutions/BiiTVersions.git</developerConnection>
-        <tag>versions-1.0.98</tag>
+        <tag>biit-versions</tag>
     </scm>
 
     <properties>
