@@ -1145,9 +1145,6 @@
     <profiles>
         <profile>
             <id>sign-artifacts</id>
-            <properties>
-                <maven.test.skip>true</maven.test.skip>
-            </properties>
             <activation>
                 <property>
                     <name>!deploySnapshot</name>
