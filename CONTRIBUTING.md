@@ -1,8 +1,8 @@
 ## Contributing to this project
 
-[fork]: https://github.com/BiiT-Solutions/InfographicEngine/fork
+[fork]: https://github.com/BiiT-Solutions/BiiTVersions/fork
 
-[pr]: https://github.com/BiiT-Solutions/InfographicEngine/compare
+[pr]: https://github.com/BiiT-Solutions/BiiTVersions/compare
 
 [cc]: https://www.conventionalcommits.org/en/v1.0.0/#summary
 
