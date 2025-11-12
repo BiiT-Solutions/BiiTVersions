@@ -4,7 +4,7 @@
     <name>BiiT Versions</name>
     <groupId>com.biit-solutions</groupId>
     <artifactId>versions</artifactId>
-    <version>0.1.107-SNAPSHOT</version>
+    <version>0.1.107</version>
     <packaging>pom</packaging>
     <description>BiiT Parent Project with all dependencies versions</description>
     <url>https://github.com/BiiT-Solutions</url>
@@ -57,7 +57,7 @@
     <scm>
         <connection>scm:git:ssh://git@github.com/BiiT-Solutions/BiiTVersions.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/BiiT-Solutions/BiiTVersions.git</developerConnection>
-        <tag>biit-versions</tag>
+        <tag>versions-0.1.107</tag>
     </scm>
 
     <properties>
@@ -182,7 +182,7 @@
         <biit-common-utils.version>[1.1,1.2)</biit-common-utils.version>
         <rest-generic-client.version>[1.1, 1.2)</rest-generic-client.version>
         <event-structure.version>[1.0,1.1)</event-structure.version>
-        <user-manager.version>[1.1,1.2)</user-manager.version>
+        <user-manager.version>[1.0,1.1)</user-manager.version>
         <liferay-authentication-client.version>[1.0,1.1)</liferay-authentication-client.version>
         <liferay-knowledge-base.version>[1.0,1.1)</liferay-knowledge-base.version>
         <liferay-configuration-reader.version>[1.0,2.0)</liferay-configuration-reader.version>
@@ -209,7 +209,7 @@
         <database-encryptor.version>[0.2,0.3)</database-encryptor.version>
         <messagebird-client.version>[1.0,1.1)</messagebird-client.version>
         <des-encryption.version>[1.0,1.1)</des-encryption.version>
-        <storableobject-persistence-manager.version>[1.1,1.2)</storableobject-persistence-manager.version>
+        <storableobject-persistence-manager.version>[1.0,1.1)</storableobject-persistence-manager.version>
         <drools-engine.version>[1.1,1.2)</drools-engine.version>
         <baseform-drools-engine.version>[1.0,1.1)</baseform-drools-engine.version>
         <plugin-manager.version>[2.0,2.1)</plugin-manager.version>
