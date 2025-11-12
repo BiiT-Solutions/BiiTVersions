@@ -195,8 +195,8 @@
         <orbeon.form.reader.version>[1.0, 1.1)</orbeon.form.reader.version>
         <omnia-proxy.version>[1.0, 1.1)</omnia-proxy.version>
         <form-runner.version>[1.4, 1.5)</form-runner.version>
-        <form-structure.version>[1.4,1.5)</form-structure.version>
-        <form-structure-submitted.version>[1.2,1.3)</form-structure-submitted.version>
+        <form-structure.version>[1.2,1.3)</form-structure.version>
+        <form-structure-submitted.version>[1.0,1.1)</form-structure-submitted.version>
         <form-structure-drools.version>[1.0,1.1)</form-structure-drools.version>
         <form-structure-orbeon.version>[1.0,1.1)</form-structure-orbeon.version>
         <orbeon-form-reader.version>[1.0,1.1)</orbeon-form-reader.version>
