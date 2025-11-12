@@ -188,7 +188,7 @@
         <liferay-configuration-reader.version>[1.0,2.0)</liferay-configuration-reader.version>
         <liferay-service-common.version>[1.0,1.1)</liferay-service-common.version>
         <biit-vaadin-common.version>[1.0,1.1)</biit-vaadin-common.version>
-        <jointjs-widget.version>1.0.0-WIDGET</jointjs-widget.version>
+        <jointjs-widget.version>1.0.0</jointjs-widget.version>
         <webforms-persistence.version>[2,3)</webforms-persistence.version>
         <jpa-schema-exporter.version>[0.5,0.6)</jpa-schema-exporter.version>
         <flowable-liferay-users.version>[0.6,0.7)</flowable-liferay-users.version>
