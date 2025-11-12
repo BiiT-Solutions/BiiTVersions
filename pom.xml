@@ -421,6 +421,11 @@
                 <version>${des-encryption.version}</version>
             </dependency>
             <dependency>
+                <groupId>com.biit-solutions.security</groupId>
+                <artifactId>des-encryption</artifactId>
+                <version>${des-encryption.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>com.biit-solutions.drools</groupId>
                 <artifactId>plugin-manager-core</artifactId>
                 <version>${plugin-manager.version}</version>
