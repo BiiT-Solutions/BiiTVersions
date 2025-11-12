@@ -251,7 +251,7 @@
             </dependency>
             <!-- JointJs Calendar Widget -->
             <dependency>
-                <groupId>com.biit.vaadin</groupId>
+                <groupId>com.biit-solutions.vaadin</groupId>
                 <artifactId>jointjs-diagram-builder</artifactId>
                 <version>${jointjs-widget.version}</version>
             </dependency>
@@ -416,7 +416,7 @@
                 <version>${baseform-drools-engine.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.biit.security</groupId>
+                <groupId>com.biit-solutions.security</groupId>
                 <artifactId>DES-encryption</artifactId>
                 <version>${des-encryption.version}</version>
             </dependency>
