@@ -184,7 +184,7 @@
         <opensearch-java.version>2.8.0</opensearch-java.version>
         <javacv.version>1.5.10</javacv.version>
         <webdrivermanager.version>5.8.0</webdrivermanager.version>
-        <selenium.version>4.33.0</selenium.version>
+        <selenium.version>4.38.0</selenium.version>
         <maven-deploy.version>0.9.0</maven-deploy.version>
 
         <!-- BiiT Dependencies -->
